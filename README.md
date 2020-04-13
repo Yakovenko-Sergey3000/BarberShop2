@@ -1,1 +1,2 @@
-# BarberShop2
+# RubySchool,Lesson 22
+Repository for Lesson22 
