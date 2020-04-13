@@ -6,9 +6,9 @@
 <div class="form-group">
   <label>Выберите мастера:</label>
 	<select class="form-control"name="name">
-  <option>Walter White</option>
-  <option>Jessie Pinkman</option>
-  <option>Gus Fring</option>
+  <option <%= @name_master = 'White White' ? 'selectted' : '' %>>Walter White</option>
+  <option <%= @name_master = 'Jessie Pinkman' ? 'selectted' : '' %>>Jessie Pinkman</option>
+  <option <%= @name_master = 'Gus Fring' ? 'selectted' : '' %>>Gus Fring</option>
 </select>
 </div>
 
