@@ -102,7 +102,7 @@ post "/visit" do
        ) 
        values (?,?,?,?,?)', [@user_name,@phone,@data_stamp,@name_master,@color] 
 
-   erb "Hello #{@user_name}"
+   erb "<h2>Спасибо вы записались</h2>"
 
    end
 
