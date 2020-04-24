@@ -103,10 +103,9 @@ erb "Сообщение отправленно!"
 end
 
 get '/showusers' do
-#    db = get_db
-#     db.execute 'select * from Users' do |row|
-#        return erb row.to_s
-# end 
+   db = get_db
+   @results = db.execute 'select * from Users order by id desc' 
+       
   erb :showusers
      
    
