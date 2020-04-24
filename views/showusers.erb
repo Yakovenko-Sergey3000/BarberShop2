@@ -5,6 +5,7 @@
 <table class="table table-striped" >
 	<thead>
 		<tr>
+			<th>№:</th>
 			<th>Имя:</th>
 			<th>Телефон:</th>
 			<th>Дата записи:</th>
@@ -14,9 +15,10 @@
 
 	</thead>
 
-	<body>
+	<tbody>
 	  <% @results.each do |row| %>
 	  	<tr>
+	  		<td><%= row['id'] %></td>
 	  		<td><%= row['name'] %></td>
 	  		<td><%= row['phone'] %></td>
 	  		<td><%= row['date_stamp'] %></td>
@@ -25,7 +27,7 @@
 	  	</tr>	
 
 	  <%  end %>
-	</body>  
+	</tbody>  
 </table>
   		
  
