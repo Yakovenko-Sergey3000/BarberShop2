@@ -2,7 +2,19 @@
 
   
 
-<table class="table">
+<table class="table table-striped" >
+	<thead>
+		<tr>
+			<th>Имя:</th>
+			<th>Телефон:</th>
+			<th>Дата записи:</th>
+			<th>Имя Мастера:</th>
+			<th>Цвет:</th>
+		</tr>	
+
+	</thead>
+
+	<body>
 	  <% @results.each do |row| %>
 	  	<tr>
 	  		<td><%= row['name'] %></td>
@@ -13,6 +25,7 @@
 	  	</tr>	
 
 	  <%  end %>
+	</body>  
 </table>
   		
  
