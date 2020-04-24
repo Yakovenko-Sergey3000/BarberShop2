@@ -102,7 +102,15 @@ Pony.mail({
 erb "Сообщение отправленно!"
 end
 
- 
+get '/showusers' do
+#    db = get_db
+#     db.execute 'select * from Users' do |row|
+#        return erb row.to_s
+# end 
+  erb :showusers
+     
+   
+end
 
 
 
@@ -110,18 +118,18 @@ get '/admin' do
 		erb :login_form
 end
 
-post '/admin' do 
-    @login = params[:login]
-    @password = params[:password]
+# post '/admin' do 
+#     @login = params[:login]
+#     @password = params[:password]
 
- 		if @login == "admin"&& @password == "admin"
+#  		if @login == "admin"&& @password == "admin"
  			 
- 			erb :welcome
+#  			erb :welcome
 
- 		else 
- 			@massege = "Sorry, Error Password!!!"
- 			erb :login_form
- 		end 		
+#  		else 
+#  			@massege = "Sorry, Error Password!!!"
+#  			erb :login_form
+#  		end 		
 
 
-end
+# end
